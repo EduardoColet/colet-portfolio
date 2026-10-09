@@ -134,6 +134,39 @@ export const projects = [
     galleryShape: 'wide',
   },
   {
+    slug: 'press-start',
+    title: 'Press Start',
+    year: 2026,
+    color: '#3fd0ff',
+    kind: { pt: 'Site · Interativo', en: 'Website · Interactive' },
+    tagline: { pt: 'Meu universo gamer, em estatísticas', en: 'My gaming universe, in stats' },
+    summary: {
+      pt: 'Site de rolagem interativa com os jogos que eu mais jogo: cada jogo ganha uma seção própria, com números animados, barras de progresso e um efeito visual no estilo dele.',
+      en: 'Interactive scrolling site with the games I play the most: each game gets its own section, with animated numbers, progress bars and a visual effect in its own style.',
+    },
+    about: [
+      {
+        pt: 'Feito com HTML, CSS e JavaScript puros, sem framework. As seções são geradas a partir de um único arquivo de dados, onde ficam horas jogadas, partidas, conquistas e as cores de cada jogo.',
+        en: 'Built with plain HTML, CSS and JavaScript, with no framework. The sections are generated from a single data file that holds hours played, matches, achievements and each game\'s colors.',
+      },
+      {
+        pt: 'Cada jogo tem um clima próprio, como synthwave, radar, tempestade, velocidade, mira, barricada e runas. O GTA VI ganhou uma contagem regressiva até o lançamento.',
+        en: 'Each game has its own mood, such as synthwave, radar, storm, speed, crosshair, barricade and runes. GTA VI gets a countdown to its release date.',
+      },
+    ],
+    highlights: [
+      { icon: 'sparkles', text: { pt: 'Um efeito visual diferente para cada jogo', en: 'A different visual effect for each game' } },
+      { icon: 'chart', text: { pt: 'Números animados e barras de progresso ligadas ao scroll', en: 'Animated numbers and scroll-driven progress bars' } },
+      { icon: 'gamepad', text: { pt: 'Contagem regressiva para o lançamento do GTA VI', en: 'Countdown to the GTA VI release' } },
+      { icon: 'code', text: { pt: 'HTML, CSS e JavaScript puros, com dados em um só arquivo', en: 'Plain HTML, CSS and JavaScript, with data in a single file' } },
+    ],
+    stack: ['html5', 'css3', 'javascript'],
+    repo: 'https://github.com/EduardoColet/my-games',
+    demo: 'https://press-start-tan.vercel.app',
+    layout: 'cover',
+    coverIcon: 'gamepad',
+  },
+  {
     slug: 'crypto-watch',
     title: 'Crypto Watch',
     year: 2025,
