@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto — Eduardo Colet</title>
+    <meta name="description" content="Projeto de Eduardo Colet: detalhes, tecnologias, imagens e vídeos." />
+    <script>
+      // Aplica o tema antes do primeiro paint (evita piscar).
+      try {
+        var p = localStorage.getItem('theme') || 'system'
+        var dark = p === 'dark' || (p === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+      } catch (e) {}
+    </script>
+    <style>
+      /* CSS crítico: em dev o Vite injeta o CSS via JS, então sem isto a página aparece
+         sem estilo por um instante (ícones gigantes). O style.css torna o body visível. */
+      html { background: #0c0b0f; }
+      html[data-theme='light'] { background: #f4f3f7; }
+      body { margin: 0; visibility: hidden; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23a385ff'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="is-project">
+    <div class="progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="nav"></header>
+    <main id="app"></main>
+    <script type="module" src="/src/project-page.js"></script>
+  </body>
+</html>
